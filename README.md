@@ -17,8 +17,8 @@ No user input is required, just testing the functions.
 Here is the pseudo code
 ```
 function selection_sort <- arr 
-  for i1 goes from 0 to end of list:
-    find min value from i1 to end of list (requires another for loop)
+  for i1 goes from 0 to end of arr:
+    find min value of arr from i1 to end of list (requires another for loop)
     arr[i1], arr[min] = arr[min], arr[i1]
 
 ```
