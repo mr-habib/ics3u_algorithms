@@ -1,13 +1,26 @@
-# ICS3U_Functions
+# ICS3U Algorithms
 
-Your job is to implement the functions found in main.py
+Your job is going to be to implement the "Selection sort" algorithm.
+I am going to list out the instructions, and it will be your job to code it.
+You may use online sources, put please put the sources you utilized in your comments.
 
-This autograder SHOULD work if you do all of your code correctly.
+Note, just like the functions assignment, I want you to write a function calld ```selection_sort``` that takes in an array as an argument.
+The function should first copy the array (```a_copy = arr.copy()```) and return that list in the end.
 
-## Be sure to include
-( ) Docstrings for each of the functions</br>
-( ) ENSURE each answer is rounded to 2 decimal places (python has a ```round()``` function you may find useful!)</br>
-( ) Make sure your functions all ```return``` something! If you simply print out the answer, you won't pass the tests.</br>
-( ) Use google to find the formulae of the weird ones near the bottom (Hypervolume of a 4D sphere? There's a pretty easy formula :)
+No user input is required, just testing the functions.
 
-If you have any questoins, please ask!
+## Selection Sort Algorithm
+1. Loop through the array using the enumerate method... we will need the index too
+2. Create a second loop that finds index of the the minimum value of the array from the current loop index to the end of the array
+3. Swap those two value
+
+Here is the pseudo code
+```
+function selection_sort <- arr 
+  for i1 goes from 0 to end of list:
+    find min value from i1 to end of list (requires another for loop)
+    arr[i1], arr[min] = arr[min], arr[i1]
+
+```
+
+If you have any questions, please let me know.
