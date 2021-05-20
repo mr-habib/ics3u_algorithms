@@ -4,13 +4,15 @@ Your job is going to be to implement the "Selection sort" algorithm.
 I am going to list out the instructions, and it will be your job to code it.
 You may use online sources, put please put the sources you utilized in your comments.
 
-## You may NOT use the ```sorted()``` function or the ```arr.sort()``` method!!
-## You may NOT use the ```min()``` function.
-
-Note, just like the functions assignment, I want you to write a function calld ```selection_sort``` that takes in an array as an argument.
-The function should first copy the array (```a_copy = arr.copy()```) and return that list in the end.
+* You may NOT use the `sorted()` function or the `arr.sort()` method!!
+* You may NOT use the `min()` function.
 
 No user input is required, just testing the functions.
+
+## To test your function
+1. Go to Console
+2. `pip install pytest`
+3. `pytest`
 
 ## Selection Sort Algorithm
 1. Loop through the entire array. We only need the index from this loop.
@@ -19,13 +21,19 @@ No user input is required, just testing the functions.
 
 Here is the pseudo code
 ```
-function selection_sort <- arr
-  arr_copy <- arr.copy()
-  for i goes from 0 to end of arr_copy:
-    find the index of the min value of arr_copy from i to end of list (requires another for loop)
-    arr_copy[i], arr_copy[min_index] = arr_copy[min_index], arr_copy[i]
-
-  return arr_copy
+FUNCTION selection_sort(array)
+    FOR i = 0 To end of array
+        smallest = i
+        FOR index = i + 1 TO end of array
+            IF array item @ index < array item @ smallest
+                smallest = index
+            END IF
+        END FOR
+        swap array item @ index with array item @ smallest
+    END FOR
+RETURN array
 ```
+Code taken from [Intro to Algorithms: Crash Course Computer Science #13](https://youtu.be/rL8X2mlNHPM?t=187)
 
 If you have any questions, please let me know.
+
